@@ -1,0 +1,196 @@
+/* CSS Variables for consistent color scheme */
+:root {
+    --primary-color: #4a4e69;
+    --secondary-color: #fcbf49;
+    --background-color: #f4f4f9;
+    --text-color: #333;
+    --white-color: #fff;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 2em;
+    background: var(--primary-color);
+    color: var(--white-color);
+    animation: fadeInDown 1.5s ease;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    color: var(--secondary-color);
+}
+
+/* Navigation */
+nav a {
+    margin: 0 10px;
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* Section Styling */
+section {
+    padding: 2em;
+    margin: 2em auto;
+    background: var(--white-color);
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.5s ease;
+}
+
+/* Button Styling */
+button {
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: var(--secondary-color);
+}
+
+/* Form Input Styling */
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+/* Typography */
+h2 {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
+    padding-left: 10px;
+    position: relative;
+}
+
+ul li::before {
+    content: "•";
+    color: var(--secondary-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes buttonHover {
+    0% {
+        background-color: var(--primary-color);
+    }
+    100% {
+        background-color: var(--secondary-color);
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    header p {
+        font-size: 1em;
+    }
+    
+    nav a {
+        font-size: 1em;
+        padding: 5px;
+    }
+    
+    section {
+        padding: 1em;
+        margin: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    
+    header p {
+        font-size: 0.9em;
+    }
+    
+    nav a {
+        font-size: 0.9em;
+    }
+    
+    section {
+        padding: 1em;
+        margin: 1em;
+    }
+}
