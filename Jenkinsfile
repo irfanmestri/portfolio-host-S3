@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Git Pulling') {
             steps {
-                git branch: 'main', url: 'https://github.com/irfanmestri/MERN_Stack-EKS-Terraform-GithubActions.git'
+                git branch: 'main', url: 'https://github.com/irfanmestri/portfolio-host-S3.git'
             }
         }
         stage('Init') {
