@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "my-bucket-terra-jen-infra"
+    bucket = "my-portfolio-s3-terra"
     key    = "statefile/terraform.state"
-    region = "us-east-1"
+    region = "us-west-1"
   }
 }

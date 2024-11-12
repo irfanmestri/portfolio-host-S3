@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "mybucket" {
-  bucket = "my-bucket-terra-jen-infra"
+  bucket = "my-portfolio-s3-terra"
 
 }
 
