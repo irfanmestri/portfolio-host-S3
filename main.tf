@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "mybucket" {
-  bucket = "my-portfolio-s3-terra"
+  bucket = "my-portfolio-s3-terra-unique123"
 
 }
 
