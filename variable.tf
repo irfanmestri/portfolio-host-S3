@@ -1,3 +1,3 @@
-variable "bucketname" {
-    default = "my-bucket-terra-jen-infra"
-}
+# variable "bucketname" {
+#     default = "my-bucket-terra-jen-infra"
+# }
