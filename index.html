@@ -3,21 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Irfan Mestri</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Irfan Mestri - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Irfan Mestri's Portfolio</h1>
-        <p>Computer Science & Engineering Graduate | Passionate about Cloud, Cybersecurity, and Networking</p>
-        <nav>
-            <a href="about.html">About</a>
-            <a href="certifications.html">Certifications</a>
-            <a href="skills.html">Skills</a>
-            <a href="projects.html">Projects</a>
-            <a href="achievements.html">Achievements</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Irfan Mestri</div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home" class="section home">
+        <h1>Hello, I'm Irfan Mestri</h1>
+        <p>Computer Science Engineer | Cloud & DevOps Enthusiast</p>
+    </section>
+
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p>Fresher in Computer Science with a focus on cloud technologies and DevOps.</p>
+        <p>Contact: +91 9503844672 | irfanmestri9@gmail.com | Kolhapur</p>
+    </section>
+
+    <section id="projects" class="section projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>AWS VPC Project</h3>
+            <p>Created a resilient AWS environment with VPC, NAT, and high availability.</p>
+        </div>
+        <div class="project">
+            <h3>Hospital Network Design</h3>
+            <p>Designed a scalable hospital network using Cisco Packet Tracer.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Cloud:</strong> AWS</li>
+            <li><strong>Version Control:</strong> Git</li>
+            <li><strong>Configuration & CI/CD:</strong> Jenkins, Docker</li>
+            <li><strong>OS:</strong> Linux</li>
+        </ul>
+    </section>
+
+    <section id="achievements" class="section achievements">
+        <h2>Achievements & Certifications</h2>
+        <ul>
+            <li>AICTE EduSkills Cybersecurity Internship</li>
+            <li>SkillNation Dashboard Creation Certification</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 </body>
 </html>
